@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #f05545;
+
+  ;
+}
+
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container-input{
+  background-color: #b71c1c;
+  width: 40%;
+  height: 40%;
+}
+
+#input {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-ticket {
+  width: 40%;
+  height: 20%;
+}
+
+#ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#box-name {
+  flex-direction: column;
+}
+
+#box-cost {
+  flex-direction: column;
+}

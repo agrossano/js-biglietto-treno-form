@@ -8,7 +8,6 @@ var ageG = document.getElementById('age');
 var ResetG = document.getElementById('reset');
 
 
-
 console.log(nameG, kmG, ageG)
 
 // selezione bottone genera
@@ -27,10 +26,10 @@ generaBtn.addEventListener('click',
 
     // calcolo prezzo dei biglietti
     ticketPrice = 0.21 * kmValue;
-    if (ageValue <= 17) {
+    if (ageValue === 'young') {
       discount = 20;
       ticketPrice = ticketPrice - (ticketPrice * discount / 100);
-    } else if (ageValue > 65) {
+    } else if (ageValue === 'senior') {
       discount = 40;
       ticketPrice = ticketPrice - (ticketPrice * discount / 100);
     }
@@ -39,8 +38,6 @@ generaBtn.addEventListener('click',
     document.getElementById('passenger-name').innerHTML = nameValue;
     //stampo prezzo del biglietto
     document.getElementById('ticket-price').innerHTML = ticketPrice.toFixed(2);
-
-
   })
 
 ResetG.addEventListener('click',
@@ -55,7 +52,4 @@ ResetG.addEventListener('click',
     ageValue = '';
     ticketPrice = '';
     document.getElementById('ticket-price').innerHTML = '';
-
-
-
   })

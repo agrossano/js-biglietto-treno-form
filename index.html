@@ -4,35 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
 <body>
   <main>
-    <div id="input">
-      <input value="" type="text" name="" id="name">
-      <input value="" type="text" name="" id="km">
-      <input value="" type="text" name="" id="age">
 
-      <button id="genera" type="button" name="button">
-        Genera
-      </button>
+    <div id="container-input">
 
-      <button id='reset' type="button" name="button">
-        Annulla
-      </button>
+      <div id="input">
+        <input value="" type="text" name="" id="name">
+        <input value="" type="number" name="" id="km">
+
+        <select id="age">
+          <option value="" selected disabled hidden>Tariffà</option>
+
+          <option value="young">Young</option>
+          <option default value="standard">Standard</option>
+          <option value="senior">Senior</option>
+        </select>
+
+        <button id="genera" type="button" name="button">
+          Genera
+        </button>
+
+        <button id='reset' type="button" name="button">
+          Annulla
+        </button>
+      </div>
+
     </div>
 
-    <div id="ticket">
 
-      <h1>NOME PASSEGGERO</h1>
-      <h2 id="passenger-name"></h2>
+    <div id="container-ticket">
 
-      <h1>COSTO BIGLIETTO</h1>
-      <h2 id="ticket-price"></h2>
+      <div id="ticket">
+
+        <div id="box-name">
+          <h1>NOME PASSEGGERO</h1>
+          <h2 id="passenger-name"></h2>
+        </div>
+
+        <div id="box-costo">
+          <h1>COSTO BIGLIETTO</h1>
+          <h2 id="ticket-price"></h2>
+        </div>
+
+      </div>
 
     </div>
-
 
   </main>
 
