@@ -34,10 +34,11 @@ generaBtn.addEventListener('click',
       ticketPrice = ticketPrice - (ticketPrice * discount / 100);
     }
 
+
     //stampo nome del passeggero
     document.getElementById('passenger-name').innerHTML = nameValue;
     //stampo prezzo del biglietto
-    document.getElementById('ticket-price').innerHTML = ticketPrice.toFixed(2);
+    document.getElementById('ticket-price').innerHTML = '€ ' + ticketPrice.toFixed(2) + ' Tariffa ' + ageValue;
   })
 
 ResetG.addEventListener('click',
