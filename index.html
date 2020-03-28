@@ -12,32 +12,40 @@
   <main>
 
     <div id="container-input">
-
       <div id="input">
-        <input placeholder='Nome' value="" type="text" name="" id="name">
-        <input placeholder='Km' value="" type="number" name="" id="km">
+        <h1>Ciao, riempi i campi per generare il tuo biglietto!</h1>
+        <div id="input-user">
 
-        <select id="age">
-          <option value="" selected disabled hidden>Tariffà</option>
+          <input placeholder='Nome e cognome' autocomplete="off" value="" type="text" name="" id="name">
+          <input placeholder='Km' autocomplete="off" value="" type="number" name="" id="km">
 
-          <option value="young">Young</option>
-          <option default value="standard">Standard</option>
-          <option value="senior">Senior</option>
-        </select>
+          <select id="age">
+            <option value="" selected disabled hidden>Tariffa</option>
 
-        <button id="genera" type="button" name="button">
-          Genera
-        </button>
+            <option value="young">Minorenni</option>
+            <option default value="standard">Standard</option>
+            <option value="senior">Over 65</option>
+          </select>
 
-        <button id='reset' type="button" name="button">
-          Annulla
-        </button>
+
+        </div>
+
+        <div id="buttons">
+          <button id="genera" type="button" name="button">
+            + Genera
+          </button>
+
+          <button id='reset' type="button" name="button">
+            - Annulla
+          </button>
+        </div>
+
       </div>
 
     </div>
 
 
-    <div id="container-ticket">
+    <div class="container-ticket">
 
       <div id="ticket">
 
