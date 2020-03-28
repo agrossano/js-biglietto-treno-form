@@ -11,9 +11,9 @@
 <body>
   <main>
 
-    <div id="container-input">
+    <div class="container-input">
       <div id="input">
-        <h1>Ciao, riempi i campi per generare il tuo biglietto!</h1>
+        <h1 id="message">Ciao, riempi i campi per generare il tuo biglietto!</h1>
         <div id="input-user">
 
           <input placeholder='Nome e cognome' autocomplete="off" value="" type="text" name="" id="name">
@@ -21,12 +21,10 @@
 
           <select id="age">
             <option value="" selected disabled hidden>Tariffa</option>
-
             <option value="young">Minorenni</option>
-            <option default value="standard">Standard</option>
+            <option value="standard">Standard</option>
             <option value="senior">Over 65</option>
           </select>
-
 
         </div>
 
@@ -45,6 +43,8 @@
     </div>
 
 
+
+
     <div class="container-ticket">
 
       <div id="ticket">
@@ -52,6 +52,11 @@
         <div id="box-name">
           <h1>NOME PASSEGGERO</h1>
           <h2 id="passenger-name"></h2>
+        </div>
+
+        <div id="box-prenotazione">
+          <h1>PNR</h1>
+          <h2 id="passenger-pnr">423423</h2>
         </div>
 
         <div id="box-costo">
@@ -63,6 +68,7 @@
       </div>
 
     </div>
+
 
   </main>
 
