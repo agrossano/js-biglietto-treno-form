@@ -31,12 +31,11 @@ main {
   transition: .3s cubic-bezier(.17,.67,.83,.67)
 }
 
-.--after {
+.-after {
   height: 262px;
   transition: .3s cubic-bezier(.17,.67,.83,.67);
   box-shadow: 20px 20px rgba(0,0,0,.15);
 }
-
 
 .post-genera {
   display: flex;
@@ -51,7 +50,7 @@ main {
   top: 216px;
 }
 
-.--after-genera {
+.-after-genera {
   opacity: 1;
   background-color: #ffffff;
   width: 60%;

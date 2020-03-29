@@ -10,9 +10,6 @@ var ticketBox = document.getElementsByClassName('container-ticket');
 var inputAfter = document.getElementsByClassName('container-input');
 var buyTicket = document.getElementsByClassName('post-genera');
 var warning = document.getElementById('message');
-
-
-// selezione bottone genera
 var generaBtn = document.getElementById('genera');
 
 
@@ -40,14 +37,14 @@ generaBtn.addEventListener('click',
       ticketPrice = ticketPrice - (ticketPrice * discount / 100);
     }
 
-    //stampo nome, prezzo del biglietto  e pnr solo se gli input sono riempiti e il nome è una stringa
+    //stampo nome, prezzo del biglietto e pnr solo se gli input sono riempiti e il nome è una stringa
 
     if (ticketPrice && nameValue) {
       document.getElementById('passenger-name').innerHTML = nameValue;
       document.getElementById('ticket-price').innerHTML = '€ ' + ticketPrice.toFixed(2);
       ticketBox[0].className = ticketBox[0].classList + ' ticket-active ';
-      inputAfter[0].className = inputAfter[0].classList + ' --after ';
-      buyTicket[0].className = buyTicket[0].classList + ' --after-genera ';
+      inputAfter[0].className = inputAfter[0].classList + ' -after ';
+      buyTicket[0].className = buyTicket[0].classList + ' -after-genera ';
       document.getElementById('message').innerHTML = '';
       pnr = Math.random().toString().substr(2, 6);
       document.getElementById('passenger-pnr').innerHTML = pnr;
@@ -71,7 +68,7 @@ ResetG.addEventListener('click',
     ticketPrice = '';
     document.getElementById('ticket-price').innerHTML = '';
     ticketBox[0].classList.remove("ticket-active");
-    inputAfter[0].classList.remove("--after");
-    buyTicket[0].classList.remove("--after-genera");
+    inputAfter[0].classList.remove("-after");
+    buyTicket[0].classList.remove("-after-genera");
     document.getElementById('message').innerHTML = 'Ciao, riempi i campi per generare il tuo biglietto!';
   })
